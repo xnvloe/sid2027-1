@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <title>Social Media Reporting Simulator</title>
   <style>
     :root{--navy:#17213c;--blue:#2765df;--blue2:#eaf2ff;--ink:#172033;--muted:#687386;--line:#dfe5ee;--green:#13805a;--greenbg:#e8f8f1;--orange:#bc5b24;--orangebg:#fff2e8;--bg:#f3f6fa}
@@ -56,9 +56,6 @@
     @media(max-width:480px){
       html,body{height:var(--mobile-viewport-height,100dvh);min-height:0;overflow:hidden}
       .device{height:100%}
-      .feed-screen>article{min-height:100%;display:flex;flex-direction:column}
-      .feed-screen>article>*{flex-shrink:0}
-      .feed-screen .jiawen-photo{height:auto;min-height:100vw;aspect-ratio:auto;flex:1 0 100vw}
       .comment-list{padding-bottom:0}
       .comment-list>div:last-child{margin-bottom:0}
       .toast{position:fixed!important;top:50%!important;bottom:auto!important;left:max(16px,env(safe-area-inset-left))!important;right:max(16px,env(safe-area-inset-right))!important;max-height:45dvh;overflow-y:auto;transform:translateY(-50%);z-index:1000}
