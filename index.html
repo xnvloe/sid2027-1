@@ -54,9 +54,11 @@
     .feed-screen::-webkit-scrollbar-thumb,.profile::-webkit-scrollbar-thumb,.reasons::-webkit-scrollbar-thumb,.review::-webkit-scrollbar-thumb,#completePanel::-webkit-scrollbar-thumb{border-radius:999px;background:#aab5c5}
     .reasons,.review{max-height:calc(100% - 31px)}#completePanel{height:100%;padding:18px 14px}
     @media(max-width:480px){
-      .feed-screen>article{min-height:100%;display:flex;flex-direction:column}
+      .feed-screen>article{min-height:100dvh;display:flex;flex-direction:column}
       .feed-screen>article>*{flex-shrink:0}
       .feed-screen .jiawen-photo{height:auto;min-height:100vw;aspect-ratio:auto;flex:1 0 100vw}
+      .comment-list{padding-bottom:0}
+      .comment-list>div:last-child{margin-bottom:0}
       .toast{position:fixed!important;top:50%!important;bottom:auto!important;left:max(16px,env(safe-area-inset-left))!important;right:max(16px,env(safe-area-inset-right))!important;max-height:45dvh;overflow-y:auto;transform:translateY(-50%);z-index:1000}
     }
   </style>
