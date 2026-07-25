@@ -56,6 +56,10 @@
     @media(max-width:480px){
       html,body{height:var(--mobile-viewport-height,100dvh);min-height:0;overflow:hidden}
       .device{height:100%}
+      .feed-screen,.profile,.reasons,.review,#completePanel{
+        overscroll-behavior-y:none!important;
+        -webkit-overflow-scrolling:auto
+      }
       .comment-list{padding-bottom:0}
       .comment-list>div:last-child{margin-bottom:0}
       .toast{position:fixed!important;top:50%!important;bottom:auto!important;left:max(16px,env(safe-area-inset-left))!important;right:max(16px,env(safe-area-inset-right))!important;max-height:45dvh;overflow-y:auto;transform:translateY(-50%);z-index:1000}
